@@ -1,15 +1,22 @@
 *{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100%;
+    color: #fff;
+    background: #0065c3;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "sofia-black", sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
 }
 @font-face {
     font-family: "sofia-black";
     src: url(font/AvenirNextLTPro-Bold.otf);
-}
-.header{
-    background-color: #0065C3;
-
 }
 .nav-logo{
     display: flex;
@@ -24,7 +31,6 @@
     text-align: center;
     font-size: 14px;
     font-weight: 400;
-    font-family: "sofia-black";
 }
 .nav-logo ul{
     display: flex;
@@ -39,7 +45,7 @@
     font-size: 30px;
 
 }
-.nav-btn button{
+button{
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
@@ -48,7 +54,6 @@
     border: 2px solid #ffffff;
     border-radius: 20px;
     padding: 8px 18px;
-    font-family: "sofia-black";
     
 }
 .nav-logo .view-product{
@@ -56,42 +61,51 @@
     align-items: center;
     margin-left: 10px;
 }
-.banner{
+section{
     background-image: url(img/background.png);
-    display: flex;
-    justify-content: center;
+    align-items: start;
+    /* height: 202.051vw; */
+    max-height: 960px;
+    background-size: cover;
 }
+.container{
+   display: flex;
+   align-items: flex-end;
+}
+
 .banner-right{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid green;
-    padding-right: 50px;
-    font-family: "sofia-black";
     color: #ffffff;
-    font-family: "sofia-black";
     font-size: 16px;
     font-weight: 400;
+    padding-right: 70px;
 }
 .banner-right h1{
-    font-size: 65px;
+    font-size: 60px;
     font-weight: bolder;
 }
 .banner-right p{
     font-weight: 100;
-    font-size: 38px;
+    font-size: 35px;
     font-family: sans-serif;
+
 }
 .banner-left img{
-    width: 95%;
+    width: 100%;
     border: 2px solid red;
+    right: 15px;
+}
+.banner >.banner-left{
+    width: 50%;
 }
 .unlock{
     background-color: #ffffff;
     color: #0065C3;
     font-size: 80px;
-    font-family: "sofia-black";
     font-weight: 800;
     text-transform: uppercase;
     border-radius: 50px;
@@ -107,7 +121,6 @@
 .music{
     font-size: 40px;
     font-weight: 200;
-    font-family: "sofia-black";
     color: #ffffff;
     margin-bottom: 20px;
 }
@@ -117,4 +130,8 @@
     border-radius: 30px;
     padding: 0px 8px;
     font-weight: 800;
+}
+.banner-right .prize{
+    font-size: 16px;
+    margin-top: 8px;
 }
