@@ -142,6 +142,18 @@ span{
     line-height: 80px;
     margin-top: -4px;
 }
+.diner-legal{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #000;
+    text-align: center;
+}
+p{
+    font-family: "sofia-pro";
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+}
 @media screen and (max-width: 1024px) {
     .menu-btn{
         display: block;
@@ -163,18 +175,6 @@ span{
         text-align: left;
     }
     
-}
-.diner-legal{
-    width: 80%;
-    margin: 0 auto;
-    background-color: #000;
-    text-align: center;
-}
-p{
-    font-family: "sofia-pro";
-    font-size: 12px;
-    font-weight: 300;
-    text-align: center;
 }
 @media screen and (max-width: 600px){
     .pepsi-125 h1{
