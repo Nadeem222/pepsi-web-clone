@@ -149,6 +149,10 @@ h3 {
     margin-top: 45px;
 }
 
+.container {
+    padding-top: 90px;
+}
+
 /* banner section start here  */
 
 .banner,
@@ -200,6 +204,7 @@ p {
     width: 100%;
     justify-content: end;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
 
 .bottle-con p {
@@ -226,7 +231,8 @@ p {
     width: 55%;
     margin-bottom: 40px;
 }
-.social-header{
+
+.social-header {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 20px;
@@ -239,15 +245,14 @@ p {
     object-fit: cover;
     position: relative;
     display: flex;
-    flex-wrap: wrap;
 }
-.social-cards{
+
+.social-cards {
     position: relative;
-    height: 227px
 }
 
 .icon {
-    width: 30px;
+    width: 20%;
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -262,9 +267,66 @@ p {
     align-items: center;
 }
 
+footer {
+    position: relative;
+    width: auto;
+    height: 18rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #0025ff;
+}
 
+.footer-container {
+    width: 100%;
+    height: 100%;
+    padding: 2.5%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: flex;
+}
 
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    column-gap: 40px;
+    column-count: 3;
+    width: 50%;
+}
 
+.footer-logo {
+    display: block;
+    width: 101px;
+    height: 101px;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 25%;
+    gap: 20px;
+
+}
+
+.footer-list li:hover {
+    opacity: .5;
+    transition: ease-in 0.3s;
+}
+
+.footer-icon img {
+    width: 30px;
+}
+
+.mobile-footer {
+    display: none;
+}
 
 @media screen and (max-width: 1024px) {
     .menu-btn {
@@ -295,6 +357,74 @@ p {
         text-align: left;
     }
 
+    .bottle-img {
+        width: 100%;
+    }
+
+    .bottle-right {
+        width: 100%;
+    }
+
+    .bottle-right img {
+        width: 50%;
+    }
+
+    .bottle-con {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-top: 40px;
+    }
+
+    .footer-container {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: block;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex: 2;
+    }
+
+    .mobile-footer img {
+        width: 80px;
+        height: 80px;
+    }
+    .social-header{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .footer-list{
+        column-count: 1;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .mobile-footer-icon{
+        background-color: #0025ff;
+        text-align: center;
+        width: 100%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        margin-top: 30px;
+    }
+    .mobile-footer-icon img{
+        width: 1.875rem;
+        height: 100%;
+    }
+
+    /* .social-cards{
+        height: 100%;
+    } */
+
 }
 
 @media screen and (max-width: 600px) {
@@ -318,4 +448,32 @@ p {
         line-height: 18px;
         padding: 15px 10px;
     }
+
+    .social-cards {
+        width: 50%;
+
+    }
+    .social-header{
+        font-size: 25px;
+    }
+
+    .social-items {
+        flex-wrap: wrap;
+    }
+
+    .social-header {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .nav-logo,
+    .nav-btn,
+    .logo-img {
+        width: 70%;
+    }
+    .mobile-footer-icon{
+        gap: 15px;
+    }
+
+
 }
