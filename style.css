@@ -1,3 +1,4 @@
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -26,7 +27,6 @@ body {
     font-family: "sofia-pro";
     src: url(font/sofiapro-light.otf);
 }
-
 .header {
     display: flex;
     width: 100%;
@@ -46,6 +46,11 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 70%;
+}
+.logo-img img:hover{
+   animation: animate__heartBeat; 
+   animation-duration: 2s;
+   cursor: pointer;
 }
 
 .nav-logo li {
@@ -246,6 +251,13 @@ p {
     object-fit: cover;
     position: relative;
     display: flex;
+}
+.social-cards img {
+    transition: transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out;
+}
+
+.social-cards:hover img {
+    transform: translateX(5px) rotate(5deg) scale(.9);
 }
 
 .social-cards {
