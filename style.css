@@ -14,6 +14,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -327,6 +328,10 @@ footer {
 .mobile-footer {
     display: none;
 }
+.footer-icon img:hover{
+    opacity: .5;
+    transition: ease-in 0.3s;
+}
 
 @media screen and (max-width: 1024px) {
     .menu-btn {
@@ -420,6 +425,22 @@ footer {
         width: 1.875rem;
         height: 100%;
     }
+    .bottle-con {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .bottle-img {
+        width: 80%; 
+        position: relative;
+        bottom: -50px; 
+        left: auto; 
+    }
+
+    .bottle-right {
+        width: 100%;
+        text-align: center;
+    }
 
     /* .social-cards{
         height: 100%;
@@ -437,7 +458,6 @@ footer {
         font-size: 20px;
         line-height: 20px;
     }
-
     .pepsi-125 h3 {
         font-size: 35px;
         line-height: 35px;
@@ -447,6 +467,9 @@ footer {
         font-size: 18px;
         line-height: 18px;
         padding: 15px 10px;
+    }
+    .bottle-img {
+        width: 70%; 
     }
 
     .social-cards {
